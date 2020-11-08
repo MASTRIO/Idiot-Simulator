@@ -1,0 +1,11 @@
+{
+  "name": "nikhil-simulator",
+  "version": "1.0.0",
+  "description": "y e s",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "run": "main.js"
+  },
+  "author": "MASTRIO"
+}
