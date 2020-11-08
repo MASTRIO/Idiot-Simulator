@@ -4,7 +4,7 @@ function bootupSystem() {
     setTimeout(() => { console.log("    Booting up Nikhil Simulator."); }, 1000);
     setTimeout(() => { console.log("    Booting up Nikhil Simulator.."); }, 1500);
     setTimeout(() => { console.log("    Booting up Nikhil Simulator..."); }, 2000);
-    setTimeout(() => { console.log("Startup Complete!"); }, 3000);
+    setTimeout(() => { console.log(">>> Startup Complete! <<<"); }, 3000);
 }
 
 // Start
