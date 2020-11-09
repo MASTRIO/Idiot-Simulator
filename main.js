@@ -2,47 +2,62 @@
 let eventOutput;
 let eventRandomiser;
 let lifeSpan;
+let startLifeSpan;
+let eventsRun = 1;
+let increasedToTen = false;
 
 // Functions
 function bootupSystem() {
     console.log("Attempting to bootup system:");
-    setTimeout(() => { console.log("    00% - Booting up Nikhil Simulator."); }, 1000);
-    setTimeout(() => { console.log("    10% - Booting up Nikhil Simulator.."); }, 1300);
-    setTimeout(() => { console.log("    20% - Booting up Nikhil Simulator..."); }, 1600);
-    setTimeout(() => { console.log("    30% - Booting up Nikhil Simulator."); }, 1900);
-    setTimeout(() => { console.log("    40% - Booting up Nikhil Simulator.."); }, 2200);
-    setTimeout(() => { console.log("    50% - Booting up Nikhil Simulator..."); }, 2500);
-    setTimeout(() => { console.log("    60% - Booting up Nikhil Simulator."); }, 2800);
-    setTimeout(() => { console.log("    70% - Booting up Nikhil Simulator.."); }, 3100);
-    setTimeout(() => { console.log("    80% - Booting up Nikhil Simulator..."); }, 3400);
-    setTimeout(() => { console.log("    90% - Booting up Nikhil Simulator."); }, 3700);
-    setTimeout(() => { console.log(">>> Startup Complete! <<<"); }, 4000);
-    setTimeout(() => { beginSimulation(); }, 5000);
+    setTimeout(() => { console.log("    00% - Loading variables"); }, 1000);
+    setTimeout(() => { console.log("    10% - Pre-running functions"); }, 1500);
+    setTimeout(() => { console.log("    20% - Loading events"); }, 2000);
+    setTimeout(() => { console.log("    30% - Polishing shoes"); }, 2500);
+    setTimeout(() => { console.log("    40% - Returning values"); }, 3000);
+    setTimeout(() => { console.log("    50% - Setting timeouts"); }, 3500);
+    setTimeout(() => { console.log("    60% - Elsing ifs"); }, 4000);
+    setTimeout(() => { console.log("    70% - Logging to the console"); }, 4500);
+    setTimeout(() => { console.log("    80% - Counting money"); }, 5000);
+    setTimeout(() => { console.log("    90% - Finalising system bootup"); }, 5500);
+    setTimeout(() => { console.log("\n>>> Startup Complete! <<<"); }, 6000);
+    setTimeout(() => { beginSimulation(); }, 9000);
 }
 
 function beginSimulation() {
-    console.log("\nBeggining Simulation:");
+    lifeSpan = (Math.round(Math.random() * 40));
+
+    if (lifeSpan < 10) {
+        lifeSpan = lifeSpan + 14
+    }
+
+    startLifeSpan = lifeSpan;
+    console.log("\nBeggining Simulation: (Total events: " + lifeSpan + ")");
     setTimeout(() => { runSimulation(); }, 1000);
 }
 
 function runSimulation() {
-    lifeSpan = (Math.round(Math.random() * 30));
-
     simulateEvent();
 
-    eventOutput = "> Nikhil " + simulateEvent();
+    if (eventsRun > 9) {
+        eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}   $ Nikhil " + simulateEvent();
+    } else {
+        eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}    $ Nikhil " + simulateEvent();
+    }
+
     console.log(eventOutput);
 
     lifeSpan = lifeSpan - 1;
+    eventsRun = eventsRun + 1;
+
     if (lifeSpan > 0) {
-        setTimeout(() => { runSimulation(); }, 1000);
+        setTimeout(() => { runSimulation(); }, 1500);
     } else {
-        console.log(">>> The Simulation Has Ended! <<<")
+        setTimeout(() => { console.log("\n>>> The Simulation Has Ended! <<<"); }, 2000);
     }
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 9));
+    eventRandomiser = (Math.round(Math.random() * 24));
     if (eventRandomiser == 0) {
         return "bought new shoes"
     } else if (eventRandomiser == 1) {
@@ -53,17 +68,52 @@ function simulateEvent() {
         return "was the imposter"
     } else if (eventRandomiser == 4) {
         eventRandomiser = (Math.round(Math.random() * 20));
-        return "bought " + eventRandomiser + " new cars on the way to school"
+        
+        if (eventRandomiser == 1) {
+            return "bought " + eventRandomiser + " new car on the way to school"
+        } else {
+            return "bought " + eventRandomiser + " new cars on the way to school"
+        }
     } else if (eventRandomiser == 5) {
         return "came third in a tutorial"
     } else if (eventRandomiser == 6) {
         return "stalked someone"
     } else if (eventRandomiser == 7) {
-        return "became gay"
+        return "existed, lol"
     } else if (eventRandomiser == 8) {
         return "played fortnite and went to hell"
     } else if (eventRandomiser == 9) {
         return "drank some mineral water"
+    } else if (eventRandomiser == 10) {
+        return "sucked someones soul"
+    } else if (eventRandomiser == 11) {
+        return "attempted to kiss someone..."
+    } else if (eventRandomiser == 12) {
+        return "asked out someones sister..."
+    } else if (eventRandomiser == 13) {
+        return "failed a subject"
+    } else if (eventRandomiser == 14) {
+        return "watched a documentry"
+    } else if (eventRandomiser == 15) {
+        return "was nerded to death"
+    } else if (eventRandomiser == 16) {
+        return "didn't sub to technoblade..."
+    } else if (eventRandomiser == 17) {
+        return "fell asleep"
+    } else if (eventRandomiser == 18) {
+        return "doubted himself"
+    } else if (eventRandomiser == 19) {
+        return "send some e-mails"
+    } else if (eventRandomiser == 20) {
+        return "was an uncultured swine"
+    } else if (eventRandomiser == 21) {
+        return "didn't show up to school"
+    } else if (eventRandomiser == 22) {
+        return "failed to understand JavaScript, lol"
+    } else if (eventRandomiser == 23) {
+        return "wasted time"
+    } else if (eventRandomiser == 24) {
+        return "wasted his life"
     }
 }
 
