@@ -24,10 +24,10 @@ function bootupSystem() {
 }
 
 function beginSimulation() {
-    lifeSpan = (Math.round(Math.random() * 40));
+    lifeSpan = (Math.round(Math.random() * 50));
 
     if (lifeSpan < 10) {
-        lifeSpan = lifeSpan + 14
+        lifeSpan = lifeSpan + 24
     }
 
     startLifeSpan = lifeSpan;
@@ -57,7 +57,7 @@ function runSimulation() {
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 24));
+    eventRandomiser = (Math.round(Math.random() * 33));
     if (eventRandomiser == 0) {
         return "bought new shoes"
     } else if (eventRandomiser == 1) {
@@ -103,7 +103,7 @@ function simulateEvent() {
     } else if (eventRandomiser == 18) {
         return "doubted himself"
     } else if (eventRandomiser == 19) {
-        return "send some e-mails"
+        return "sent some e-mails"
     } else if (eventRandomiser == 20) {
         return "was an uncultured swine"
     } else if (eventRandomiser == 21) {
@@ -114,6 +114,24 @@ function simulateEvent() {
         return "wasted time"
     } else if (eventRandomiser == 24) {
         return "wasted his life"
+    } else if (eventRandomiser == 25) {
+        return "yelled at a innocent bystander"
+    } else if (eventRandomiser == 26) {
+        return "thought he was right when he was wrong"
+    } else if (eventRandomiser == 27) {
+        return "won't give Jacob gum"
+    } else if (eventRandomiser == 28) {
+        return "won't let Jacob play pong"
+    } else if (eventRandomiser == 29) {
+        return "realised that Suzie was doing his work"
+    } else if (eventRandomiser == 30) {
+        return "bullied a disabled person (AKA Johnny)"
+    } else if (eventRandomiser == 31) {
+        return "acted gay (but he doesn't need to act)"
+    } else if (eventRandomiser == 32) {
+        return "threw out a limited edition Ps4"
+    } else if (eventRandomiser == 33) {
+        return "touched Aaron"
     }
 }
 
