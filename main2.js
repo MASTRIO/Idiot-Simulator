@@ -8,18 +8,18 @@ let increasedToTen = false;
 
 // Functions
 function bootupSystem() {
-    console.log("Attempting to bootup system:");
-    setTimeout(() => { console.log("    00% - Loading variables"); }, 1000);
-    setTimeout(() => { console.log("    10% - Pre-running functions"); }, 1500);
-    setTimeout(() => { console.log("    20% - Loading events"); }, 2000);
-    setTimeout(() => { console.log("    30% - Polishing shoes"); }, 2500);
-    setTimeout(() => { console.log("    40% - Returning values"); }, 3000);
-    setTimeout(() => { console.log("    50% - Setting timeouts"); }, 3500);
-    setTimeout(() => { console.log("    60% - Elsing ifs"); }, 4000);
-    setTimeout(() => { console.log("    70% - Logging to the console"); }, 4500);
-    setTimeout(() => { console.log("    80% - Counting money"); }, 5000);
-    setTimeout(() => { console.log("    90% - Finalising system bootup"); }, 5500);
-    setTimeout(() => { console.log("\n>>> Startup Complete! <<<"); }, 6000);
+    document.write("Attempting to bootup system:");
+    setTimeout(() => { document.write("    00% - Loading variables"); }, 1000);
+    setTimeout(() => { document.write("    10% - Pre-running functions"); }, 1500);
+    setTimeout(() => { document.write("    20% - Loading events"); }, 2000);
+    setTimeout(() => { document.write("    30% - Polishing shoes"); }, 2500);
+    setTimeout(() => { document.write("    40% - Returning values"); }, 3000);
+    setTimeout(() => { document.write("    50% - Setting timeouts"); }, 3500);
+    setTimeout(() => { document.write("    60% - Elsing ifs"); }, 4000);
+    setTimeout(() => { document.write("    70% - Logging to the console"); }, 4500);
+    setTimeout(() => { document.write("    80% - Counting money"); }, 5000);
+    setTimeout(() => { document.write("    90% - Finalising system bootup"); }, 5500);
+    setTimeout(() => { document.write("<br>>>> Startup Complete! <<<"); }, 6000);
     setTimeout(() => { beginSimulation(); }, 9000);
 }
 
@@ -31,7 +31,7 @@ function beginSimulation() {
     }
 
     startLifeSpan = lifeSpan;
-    console.log("\nBeggining Simulation: (Total events: " + lifeSpan + ")");
+    document.write("<br>Beggining Simulation: (Total events: " + lifeSpan + ")");
     setTimeout(() => { runSimulation(); }, 1000);
 }
 
@@ -44,7 +44,7 @@ function runSimulation() {
         eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}    $ Nikhil " + simulateEvent();
     }
 
-    console.log(eventOutput);
+    document.write("<br>" + eventOutput);
 
     lifeSpan = lifeSpan - 1;
     eventsRun = eventsRun + 1;
@@ -52,7 +52,7 @@ function runSimulation() {
     if (lifeSpan > 0) {
         setTimeout(() => { runSimulation(); }, 1500);
     } else {
-        setTimeout(() => { console.log("\n>>> The Simulation Has Ended! <<<"); }, 2000);
+        setTimeout(() => { document.write("<br>>>> The Simulation Has Ended! <<<"); }, 2000);
     }
 }
 
@@ -136,7 +136,9 @@ function simulateEvent() {
 }
 
 // Start
-console.log("\nWelcome to Nikhil Simulator!");
-console.log("ⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺ");
+function start() {
+    document.write("<br>Welcome to Nikhil Simulator!");
+    document.write("ⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺ");
 
-setTimeout(() => { bootupSystem(); }, 2000);
+    setTimeout(() => { bootupSystem(); }, 2000);
+}
