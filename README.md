@@ -1,3 +1,3 @@
 # Nikhil-Simulator
 
-I like to insult peopel lol :)
+I like to insult people lol :)
