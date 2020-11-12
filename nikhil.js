@@ -136,7 +136,7 @@ function simulateEvent() {
 }
 
 // Start
-function start() {
+function startNikhil() {
     document.write("<br>Welcome to Nikhil Simulator!");
     document.write("<br>----------------------------<br>");
 
