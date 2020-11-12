@@ -138,7 +138,7 @@ function simulateEvent() {
 // Start
 function start() {
     document.write("<br>Welcome to Nikhil Simulator!");
-    document.write("<br>ⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺⲺ");
+    document.write("<br>----------------------------<br>");
 
     setTimeout(() => { bootupSystem(); }, 2000);
 }
