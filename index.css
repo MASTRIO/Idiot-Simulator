@@ -21,28 +21,3 @@
 	background-color:#58ff49;
 	padding: 10px 400px;
 }
-
-
-.cancer {
-	box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	background-color:#ededed;
-	border:4px solid #6b6b6b;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:19px;
-	font-weight:bold;
-	padding:15px 36px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
-}
-.cancer:hover {
-	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-    background-color:#bab1ba;
-}
-.cancer:active {
-	position:relative;
-	top:1px;
-}

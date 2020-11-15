@@ -139,7 +139,7 @@ function simulateEvent() {
 // Start
 function startBarbra() {
     document.write("<br>Welcome to " + subjectsName + " Simulator!");
-    document.write("<br>----------------------------<br>");
+    document.write("<br>------------------------------------------------------<br>");
 
     setTimeout(() => { bootupSystem(); }, 2000);
 }
