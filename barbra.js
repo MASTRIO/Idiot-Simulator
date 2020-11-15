@@ -1,4 +1,5 @@
 // Variables
+let subjectsName = "Barbra";
 let eventOutput;
 let eventRandomiser;
 let lifeSpan;
@@ -39,9 +40,9 @@ function runSimulation() {
     simulateEvent();
 
     if (eventsRun > 9) {
-        eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}    $ Nikhil " + simulateEvent();
+        eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}    $ " + subjectsName + " " + simulateEvent();
     } else {
-        eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}     $ Nikhil " + simulateEvent();
+        eventOutput = "{" + eventsRun + "/" + startLifeSpan + "}     $ " + subjectsName + " " + simulateEvent();
     }
 
     document.write("<br>" + eventOutput);
@@ -127,7 +128,7 @@ function simulateEvent() {
     } else if (eventRandomiser == 30) {
         return "bullied a disabled person (AKA Johnny)"
     } else if (eventRandomiser == 31) {
-        return "acted gay (but he doesn't need to)"
+        return "acted like an ass (but he doesn't need to)"
     } else if (eventRandomiser == 32) {
         return "threw out a limited edition Ps4"
     } else if (eventRandomiser == 33) {
@@ -136,8 +137,8 @@ function simulateEvent() {
 }
 
 // Start
-function startNikhil() {
-    document.write("<br>Welcome to Nikhil Simulator!");
+function startBarbra() {
+    document.write("<br>Welcome to " + subjectsName + " Simulator!");
     document.write("<br>----------------------------<br>");
 
     setTimeout(() => { bootupSystem(); }, 2000);
