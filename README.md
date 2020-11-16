@@ -1,3 +1,3 @@
 # Idiot Simulator
 
-I like to insult people lol :)
+I like to insult my *fwiends* lol :)
