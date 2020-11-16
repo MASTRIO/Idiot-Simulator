@@ -126,7 +126,7 @@ function simulateEvent() {
     } else if (eventRandomiser == 29) {
         return "realised that Suzie was doing his work"
     } else if (eventRandomiser == 30) {
-        return "bullied a disabled person (AKA Johnny)"
+        return "bullied a disabled person (AKA Margret)"
     } else if (eventRandomiser == 31) {
         return "acted like an ass (but he doesn't need to)"
     } else if (eventRandomiser == 32) {
@@ -137,7 +137,7 @@ function simulateEvent() {
 }
 
 // Start
-function startBarbra() {
+function start() {
     document.write("<br>Welcome to " + subjectsName + " Simulator!");
     document.write("<br>------------------------------------------------------<br>");
 
