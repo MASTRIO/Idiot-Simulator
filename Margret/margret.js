@@ -58,7 +58,7 @@ function runSimulation() {
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 4));
+    eventRandomiser = (Math.round(Math.random() * 9));
     if (eventRandomiser == 0) {
         return "is a moose"
     } else if (eventRandomiser == 1) {
@@ -69,6 +69,16 @@ function simulateEvent() {
         return "spoke in a wierd voice"
     } else if (eventRandomiser == 4) {
         return "was disrespectful"
+    } else if (eventRandomiser == 5) {
+        return "Spoke to Ty"
+    } else if (eventRandomiser == 6) {
+        return "went away"
+    } else if (eventRandomiser == 7) {
+        return "couldn't do a situp"
+    } else if (eventRandomiser == 8) {
+        return "hurt his leg"
+    } else if (eventRandomiser == 9) {
+        return "got surgery"
     }
 }
 
