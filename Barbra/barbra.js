@@ -1,5 +1,6 @@
 // Variables
-let subjectsName = "Barbra";
+const subjectsName = "Barbra";
+const maxAmount = 34;
 let eventOutput;
 let eventRandomiser;
 let lifeSpan;
@@ -25,7 +26,7 @@ function bootupSystem() {
 }
 
 function beginSimulation() {
-    lifeSpan = (Math.round(Math.random() * 50));
+    lifeSpan = (Math.round(Math.random() * maxAmount));
 
     if (lifeSpan < 10) {
         lifeSpan = lifeSpan + 24
@@ -58,7 +59,7 @@ function runSimulation() {
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 34));
+    eventRandomiser = (Math.round(Math.random() * maxAmount));
     if (eventRandomiser == 0) {
         return "bought new shoes"
     } else if (eventRandomiser == 1) {
