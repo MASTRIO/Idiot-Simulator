@@ -120,9 +120,9 @@ function simulateEvent() {
     } else if (eventRandomiser == 26) {
         return "thought he was right when he was wrong"
     } else if (eventRandomiser == 27) {
-        return "won't give Jacob gum"
+        return "won't give Elisabeth gum"
     } else if (eventRandomiser == 28) {
-        return "won't let Jacob play pong"
+        return "won't let Elisabeth play pong"
     } else if (eventRandomiser == 29) {
         return "realised that Suzie was doing his work"
     } else if (eventRandomiser == 30) {
@@ -132,7 +132,7 @@ function simulateEvent() {
     } else if (eventRandomiser == 32) {
         return "threw out a limited edition Ps4"
     } else if (eventRandomiser == 33) {
-        return "touched Aaron"
+        return "touched Bethany"
     }
 }
 
