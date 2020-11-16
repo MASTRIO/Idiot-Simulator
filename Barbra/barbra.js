@@ -58,7 +58,7 @@ function runSimulation() {
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 33));
+    eventRandomiser = (Math.round(Math.random() * 34));
     if (eventRandomiser == 0) {
         return "bought new shoes"
     } else if (eventRandomiser == 1) {
@@ -133,6 +133,8 @@ function simulateEvent() {
         return "threw out a limited edition Ps4"
     } else if (eventRandomiser == 33) {
         return "touched Bethany"
+    } else if (eventRandomiser == 34) {
+        return "is a Barbie knockoff"
     }
 }
 

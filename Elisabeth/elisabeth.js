@@ -58,7 +58,7 @@ function runSimulation() {
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 9));
+    eventRandomiser = (Math.round(Math.random() * 10));
     if (eventRandomiser == 0) {
         return "played too much smash bros."
     } else if (eventRandomiser == 1) {
@@ -79,6 +79,8 @@ function simulateEvent() {
         return "is a nerd"
     } else if (eventRandomiser == 9) {
         return "is bad at smash bros."
+    } else if (eventRandomiser == 10) {
+        return "did his work"
     }
 }
 
