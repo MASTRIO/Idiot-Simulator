@@ -58,7 +58,7 @@ function runSimulation() {
 }
 
 function simulateEvent() {
-    eventRandomiser = (Math.round(Math.random() * 3));
+    eventRandomiser = (Math.round(Math.random() * 9));
     if (eventRandomiser == 0) {
         return "played too much smash bros."
     } else if (eventRandomiser == 1) {
@@ -67,6 +67,18 @@ function simulateEvent() {
         return "played Spiderman on his ps99999999999999"
     } else if (eventRandomiser == 3) {
         return "fell asleep in maths"
+    } else if (eventRandomiser == 4) {
+        return "is stinky"
+    } else if (eventRandomiser == 5) {
+        return "down B'd off the map"
+    } else if (eventRandomiser == 6) {
+        return "was beaten by steve"
+    } else if (eventRandomiser == 7) {
+        return "has a big ego"
+    } else if (eventRandomiser == 8) {
+        return "is a nerd"
+    } else if (eventRandomiser == 9) {
+        return "is bad at smash bros."
     }
 }
 
