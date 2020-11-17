@@ -28,10 +28,6 @@ function bootupSystem() {
 function beginSimulation() {
     lifeSpan = (Math.round(Math.random() * maxAmount));
 
-    if (lifeSpan < 10) {
-        lifeSpan = lifeSpan + 24
-    }
-
     startLifeSpan = lifeSpan;
     document.write("<br><br>Beggining Simulation: (Total events: " + lifeSpan + ")");
     setTimeout(() => { runSimulation(); }, 1000);

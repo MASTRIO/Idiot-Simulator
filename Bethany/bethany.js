@@ -1,5 +1,5 @@
 // Variables
-const subjectsName = "Margret";
+const subjectsName = "Bethany";
 const maxAmount = 9;
 let eventOutput;
 let eventRandomiser;
@@ -14,12 +14,12 @@ function bootupSystem() {
     setTimeout(() => { document.write("<br>    00% - Loading variables"); }, 1000);
     setTimeout(() => { document.write("<br>    10% - Pre-running functions"); }, 1500);
     setTimeout(() => { document.write("<br>    20% - Loading events"); }, 2000);
-    setTimeout(() => { document.write("<br>    30% - Finding a Moose"); }, 2500);
+    setTimeout(() => { document.write("<br>    30% - Getting out the chess board"); }, 2500);
     setTimeout(() => { document.write("<br>    40% - Returning values"); }, 3000);
     setTimeout(() => { document.write("<br>    50% - Setting timeouts"); }, 3500);
     setTimeout(() => { document.write("<br>    60% - Elsing ifs"); }, 4000);
     setTimeout(() => { document.write("<br>    70% - Logging to the console"); }, 4500);
-    setTimeout(() => { document.write("<br>    80% - Bullying disrespectiful people"); }, 5000);
+    setTimeout(() => { document.write("<br>    80% - Opening Youtube"); }, 5000);
     setTimeout(() => { document.write("<br>    90% - Finalising system bootup"); }, 5500);
     setTimeout(() => { document.write("<br><br>>>> Startup Complete! <<<"); }, 6000);
     setTimeout(() => { beginSimulation(); }, 9000);
@@ -57,25 +57,25 @@ function runSimulation() {
 function simulateEvent() {
     eventRandomiser = (Math.round(Math.random() * maxAmount));
     if (eventRandomiser == 0) {
-        return "is a moose"
+        return "event 0"
     } else if (eventRandomiser == 1) {
-        return "got them free v-bucks"
+        return "event 1"
     } else if (eventRandomiser == 2) {
-        return "jumped off Mount Everest"
+        return "event 2"
     } else if (eventRandomiser == 3) {
-        return "spoke in a wierd voice"
+        return "event 3"
     } else if (eventRandomiser == 4) {
-        return "was disrespectful"
+        return "event 4"
     } else if (eventRandomiser == 5) {
-        return "Spoke to Ty"
+        return "event 5"
     } else if (eventRandomiser == 6) {
-        return "went away"
+        return "event 6"
     } else if (eventRandomiser == 7) {
-        return "couldn't do a situp"
+        return "event 7"
     } else if (eventRandomiser == 8) {
-        return "hurt his leg"
+        return "event 8"
     } else if (eventRandomiser == 9) {
-        return "got surgery"
+        return "event 9"
     }
 }
 
