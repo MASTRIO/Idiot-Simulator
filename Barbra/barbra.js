@@ -1,6 +1,6 @@
 // Variables
 const subjectsName = "Barbra";
-const maxAmount = 34;
+const maxAmount = 36;
 let eventOutput;
 let eventRandomiser;
 let lifeSpan;
@@ -132,6 +132,10 @@ function simulateEvent() {
         return "touched Bethany"
     } else if (eventRandomiser == 34) {
         return "is a Barbie knockoff"
+    } else if (eventRandomiser == 35) {
+        return "is bad at chess"
+    } else if (eventRandomiser == 36) {
+        return "was beaten by Bethany in chess"
     }
 }
 

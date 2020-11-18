@@ -57,25 +57,25 @@ function runSimulation() {
 function simulateEvent() {
     eventRandomiser = (Math.round(Math.random() * maxAmount));
     if (eventRandomiser == 0) {
-        return "event 0"
+        return "is epic at chess"
     } else if (eventRandomiser == 1) {
-        return "event 1"
+        return "beat Barbra in chess"
     } else if (eventRandomiser == 2) {
-        return "event 2"
+        return "is a nerd"
     } else if (eventRandomiser == 3) {
-        return "event 3"
+        return "is good a math"
     } else if (eventRandomiser == 4) {
-        return "event 4"
+        return "was beaten by Suzie at Smash Bros."
     } else if (eventRandomiser == 5) {
-        return "event 5"
+        return "can't sit down because there are monsters nearby"
     } else if (eventRandomiser == 6) {
-        return "event 6"
+        return "was canceled"
     } else if (eventRandomiser == 7) {
-        return "event 7"
+        return "said the same thing over and over again"
     } else if (eventRandomiser == 8) {
-        return "event 8"
+        return "played pokemon on his switch"
     } else if (eventRandomiser == 9) {
-        return "event 9"
+        return "suggested something for the simulator"
     }
 }
 
