@@ -1,6 +1,6 @@
 // Variables
 const subjectsName = "Barbra";
-const maxAmount = 36;
+const maxAmount = 0;
 let eventOutput;
 let eventRandomiser;
 let lifeSpan;
@@ -54,71 +54,43 @@ function runSimulation() {
     }
 }
 
+function newEvent(eventOutput) {
+    maxAmount = maxAmount + 1;
+    return eventOutput
+}
+
 function simulateEvent() {
     eventRandomiser = (Math.round(Math.random() * maxAmount));
-    if (eventRandomiser == 0) {
-        return "bought new shoes"
-    } else if (eventRandomiser == 1) {
+    maxAmount = 0;
+
+    newEvent("bought new shoes");
         return "fixed a slight imperfection in his hair"
-    } else if (eventRandomiser == 2) {
         return "came second in a tutorial"
-    } else if (eventRandomiser == 3) {
         return "was the imposter"
-    } else if (eventRandomiser == 4) {
-        eventRandomiser = (Math.round(Math.random() * 20));
-        
-        if (eventRandomiser == 1) {
-            return "bought " + eventRandomiser + " new car on the way to school"
-        } else {
-            return "bought " + eventRandomiser + " new cars on the way to school"
-        }
-    } else if (eventRandomiser == 5) {
+        return "bought 10 new cars on the way to school"
         return "came third in a tutorial"
-    } else if (eventRandomiser == 6) {
         return "stalked someone"
-    } else if (eventRandomiser == 7) {
         return "existed, lol"
-    } else if (eventRandomiser == 8) {
         return "played fortnite and went to hell"
-    } else if (eventRandomiser == 9) {
         return "drank some mineral water"
-    } else if (eventRandomiser == 10) {
         return "sucked someones soul"
-    } else if (eventRandomiser == 11) {
         return "attempted to kiss someone..."
-    } else if (eventRandomiser == 12) {
         return "asked out someones sister..."
-    } else if (eventRandomiser == 13) {
         return "failed a subject"
-    } else if (eventRandomiser == 14) {
         return "watched a documentry"
-    } else if (eventRandomiser == 15) {
         return "was nerded to death"
-    } else if (eventRandomiser == 16) {
         return "didn't sub to technoblade..."
-    } else if (eventRandomiser == 17) {
         return "fell asleep"
-    } else if (eventRandomiser == 18) {
         return "doubted himself"
-    } else if (eventRandomiser == 19) {
         return "sent some e-mails"
-    } else if (eventRandomiser == 20) {
         return "was an uncultured swine"
-    } else if (eventRandomiser == 21) {
         return "didn't show up to school"
-    } else if (eventRandomiser == 22) {
         return "failed to understand JavaScript, lol"
-    } else if (eventRandomiser == 23) {
         return "wasted time"
-    } else if (eventRandomiser == 24) {
         return "wasted his life"
-    } else if (eventRandomiser == 25) {
         return "yelled at a innocent bystander"
-    } else if (eventRandomiser == 26) {
         return "thought he was right when he was wrong"
-    } else if (eventRandomiser == 27) {
         return "won't give Elisabeth gum"
-    } else if (eventRandomiser == 28) {
         return "won't let Elisabeth play pong"
     } else if (eventRandomiser == 29) {
         return "realised that Suzie was doing his work"
