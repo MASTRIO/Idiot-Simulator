@@ -19,7 +19,7 @@ function bootupSystem() {
     setTimeout(() => { document.write("<br>    50% - Setting timeouts"); }, 3500);
     setTimeout(() => { document.write("<br>    60% - Elsing ifs"); }, 4000);
     setTimeout(() => { document.write("<br>    70% - Logging to the console"); }, 4500);
-    setTimeout(() => { document.write("<br>    80% - Opening Youtube"); }, 5000);
+    setTimeout(() => { document.write("<br>    80% - Choosing a starter"); }, 5000);
     setTimeout(() => { document.write("<br>    90% - Finalising system bootup"); }, 5500);
     setTimeout(() => { document.write("<br><br>>>> Startup Complete! <<<"); }, 6000);
     setTimeout(() => { beginSimulation(); }, 9000);
